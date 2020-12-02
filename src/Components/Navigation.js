@@ -43,8 +43,9 @@ class Navigation extends Component {
       <div>
         <Content peopleList={peopleList} currentIndex={currentIndex} />
         <div className="navigation-buttons">
-          <span onClick={() => this.next()}> Next </span>
-          <span onClick={() => this.previous()}> Previous `</span>
+          <span id ='next' onClick={() => this.next()}> Next </span>
+          <span id = 'previous' onClick={() => this.previous()}> Previous </span>
+          {/*  find out how to type < Previous without React confusing with component  */}
         </div>
       </div>
     );
