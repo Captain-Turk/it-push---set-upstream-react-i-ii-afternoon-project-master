@@ -1,33 +1,21 @@
 
 import './App.css';
-import People from './Components/People'
-import Buttons from './Components/Buttons'
+import Buttons from './Components/Buttons/Buttons'
 import Navigation from './Components/Navigation'
+import Content from './Components/Content'
+import Header from './Components/Header'
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Home />
-      {/* {document.pathname === '/home' ? <button className = 'Home-Button' >Home</button> : ""} */}
+       <Header />     
       </header>
-      <body className = 'body'>
-        
-        <div className ='Content'>
-          <Person />
-        </div>
 
-        <div className = 'data-buttons'>
-          <Edit />
-          <Delete />
-          <New />
-        </div>
-
-        <div className = 'navigation-buttons'>
-          <Previous />
-          <Next />          
-        </div>        
-
+      <body className = 'body'>         
+         <Navigation />        
       </body>
 
     </div>
@@ -35,6 +23,34 @@ function App() {
 }
 
 export default App;
+
+
+
+
+      // <header className="App-header">
+      //   <Home />
+      // {/* {document.pathname === '/home' ? <button className = 'Home-Button' >Home</button> : ""} */}
+      // </header>
+      // <body className = 'body'>
+        
+      //   <div className ='Content'>
+      //    <Content />
+      //   </div>
+
+      //   <div className = 'data-buttons'>
+      //     <Edit />
+      //     <Delete />
+      //     <New />
+      //   </div>
+
+      //   <div className = 'navigation-buttons'>
+      //     <Previous />
+      //     <Next />          
+      //   </div>        
+
+      // </body>
+
+
 
 
 // function App() {
