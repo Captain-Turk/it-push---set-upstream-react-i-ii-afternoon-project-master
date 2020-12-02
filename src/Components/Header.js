@@ -1,16 +1,14 @@
-import React from 'react'
-import Content from './Content'
+import React from "react";
+import Content from "./Content";
 
-function Header(props){
-
-    
-
-    return(
-        <div>
-            {/* <button onClick = {props.peopleList[0]}>Home</button> */}
-        </div>
-    )
-    
+function Header(props) {
+  return (
+    <div class="Header">
+      <a id="home" href={null}>
+        Home
+      </a>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

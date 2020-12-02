@@ -10,11 +10,11 @@ import Header from './Components/Header'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="Header">
        <Header />     
       </header>
 
-      <body className = 'body'>         
+      <body className = 'Body'>         
          <Navigation />        
       </body>
 

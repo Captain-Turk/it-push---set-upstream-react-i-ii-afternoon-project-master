@@ -12,9 +12,9 @@ class Buttons extends Component{
     render(){
         return(
             <div>
-                <Edit />
-                <Delete />
-                <New />
+                <button className="midButton" >Edit</button>
+                <button className="midButton" >Delete</button>
+                <button className="midButton" >New</button>  
             </div>
             
         )

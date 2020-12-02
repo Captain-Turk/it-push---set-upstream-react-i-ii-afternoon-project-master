@@ -1,34 +1,36 @@
 import React from "react";
 
 function Content(props) {
-    let {peopleList, currentIndex} =props
-    let person = props.peopleList[props.currentIndex] 
+  let { peopleList, currentIndex } = props;
+  let person = props.peopleList[props.currentIndex];
 
-    const movieList = person.favoriteMovies.map((movie, movieIndex)=> {
-            return <li key={movieIndex}> {movie} </li>})
-                   
-            return (
-                <div className="person" key={person.id} >
-                {console.log(props)}
-      <span className="page">
-        `{currentIndex + 1}/{peopleList.length}`
-      </span>
+  const movieList = person.favoriteMovies.map((movie, movieIndex) => {
+    return <li key={movieIndex}> {movie} </li>;
+  });
 
-      <h1>
-        `${person.name.first} ${person.name.last}`
+  return (
+    <div className="person" key={person.id}>
+      {console.log(props)}
+      <div id='pageBox'>
+      <p id="page">
+        {currentIndex + 1}/{peopleList.length}
+      </p>
+      </div>
+
+      <h1 id ='name'>
+        {person.name.first} {person.name.last}
       </h1>
       <h2>
-        From:` ${person.city}, ${person.country}`
+        From:{person.city} {person.country}
       </h2>
-      <h2> Job Title:` ${person.title}`</h2>
-      <h2> Employer:` ${person.employer}`</h2>
-      <ol>Favorite Movies:
-         {movieList}
+      <h2 className='JobInfo'> Job Title: {person.title} </h2>
+      <h2 className='JobInfo'> Employer: {person.employer} </h2>
+      <ol id= 'MovieList'>
+        <h2>Favorite Movies:</h2>
+        {movieList}
       </ol>
-
     </div>
-  )
-  
+  );
 }
 
 export default Content;
